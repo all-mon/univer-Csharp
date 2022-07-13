@@ -1,0 +1,33 @@
+﻿@{
+    ViewData["Title"] = "Личный кабинет";
+}
+@model IEnumerable<CP_AuthCookieApp.Models.User>
+<h2>Список пользователей</h2>
+<table class="table">
+    <tr><td>Почта</td><td>Дата регистрации</td><td>Роль</td></tr>
+    @foreach (var user in Model)
+    {
+        <tr>
+            <td>@user.Email</td>
+            <td>@user.DateOfRegistration.ToShortDateString()</td>
+            <td>@user.RoleId</td>
+            <td>
+                <a class="btn btn-sm btn-primary" asp-action="Edit" asp-controller="Home"
+                asp-route-id="@user.Id">Изменить</a>
+                <a class="btn btn-sm btn-danger" asp-action="Delete" asp-controller="Home" 
+                asp-route-id="@user.Id">Удалить</a>
+                
+        </tr>
+    }
+</table>
+<a asp-action="Create">Добавить пользователя</a>
+
+
+<div class="text-center">
+    <h1 class="display-4">Welcome</h1>
+    <p>Привет,@User.Identity.Name</p>
+
+    <form method="post" asp-controller="Account" asp-action="Logout">
+        <input type="submit" value="Выход" />
+    </form>
+</div>

@@ -1,0 +1,12 @@
+﻿@{
+    ViewData["Title"] = "Личный кабинет";
+}
+
+
+<div class="text-center">
+    <h1 class="display-4">Welcome</h1>
+    <p>Привет,@User.Identity.Name</p>
+    <form method="post" asp-controller="Account" asp-action="Logout">
+        <input type="submit" value="Выход" />
+    </form>
+</div>

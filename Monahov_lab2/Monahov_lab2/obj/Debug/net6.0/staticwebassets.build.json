@@ -1,0 +1,37 @@
+{
+  "Version": 1,
+  "Hash": "n900g4CfPCfP4VyY8HrXri/n6CgR6tHxqmG3ZNlNuX8=",
+  "Source": "Monahov_lab2",
+  "BasePath": "_content/Monahov_lab2",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [
+    {
+      "Name": "Monahov_lab2\\wwwroot",
+      "Source": "Monahov_lab2",
+      "ContentRoot": "D:\\csharp_project\\univer\\Monahov_lab2\\Monahov_lab2\\wwwroot\\",
+      "BasePath": "_content/Monahov_lab2",
+      "Pattern": "**"
+    }
+  ],
+  "Assets": [
+    {
+      "Identity": "D:\\csharp_project\\univer\\Monahov_lab2\\Monahov_lab2\\wwwroot\\index.html",
+      "SourceId": "Monahov_lab2",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\csharp_project\\univer\\Monahov_lab2\\Monahov_lab2\\wwwroot\\",
+      "BasePath": "_content/Monahov_lab2",
+      "RelativePath": "index.html",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\index.html"
+    }
+  ]
+}
